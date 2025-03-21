@@ -54,7 +54,7 @@ def read_code_files(directory):
 
 
 def create_word_documents(code_files, output_prefix):
-    output_dir = 'output/autoconfigure'
+    output_dir = 'output/feature'
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
@@ -87,7 +87,7 @@ def create_word_documents(code_files, output_prefix):
 
 
 def main():
-    input_directory = 'input/app-frw-ng-plus/sub-projects/app-frw-autoconfigure'  # replace with your path
+    input_directory = 'input/app-frw-ng-plus/sub-projects/app-frw-featuretoggle'  # replace with your path
     output_prefix = 'app_code'
     code_files = read_code_files(input_directory)
     create_word_documents(code_files, output_prefix)
